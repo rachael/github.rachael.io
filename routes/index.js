@@ -5,11 +5,7 @@ app.set('views', [__dirname + '/../views', __dirname + '/../submodules']);
 
 /* GET home page. */
 app.get('/', function(req, res) {
-  res.render('index.pug', { title: 'rachael.io' });
-});
-
-app.get('/github', function (req, res) {
-  res.render('github.pug', { title: 'rachael.github.io', theme: 'github-theme' });
+  res.render('index.pug', { title: 'github.rachael.io', theme: 'github-theme' });
 });
 
 /**

@@ -1,21 +1,21 @@
 {
-  "name": "rachael.io",
+  "name": "github.rachael.io",
   "version": "1.0.0",
-  "description": "My personal website. - Rachael Passov <rae@rachael.io>",
+  "description": "Github demos and such. - Rachael Passov <github@rachael.io>",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./bin/www"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/rachael/rachael.io.git"
+    "url": "git+ssh://git@github.com/rachael/github.rachael.io.git"
   },
   "author": "Rachael Passov <github@rachael.io>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rachael/rachael.io/issues"
+    "url": "https://github.com/rachael/github.rachael.io/issues"
   },
-  "homepage": "https://rachael.io",
+  "homepage": "https://github.rachael.io",
   "dependencies": {
     "body-parser": "^1.15.2",
     "compression": "^1.6.2",
