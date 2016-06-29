@@ -1,10 +1,8 @@
 var express = require('express');
-var app = express();
-
-app.set('views', [__dirname + '/../views', __dirname + '/../submodules']);
+var router = express.Router();
 
 /* GET home page. */
-app.get('/', function(req, res) {
+router.get('/', function(req, res) {
   res.render('index.pug', { title: 'github.rachael.io', theme: 'github-theme' });
 });
 
@@ -13,10 +11,10 @@ app.get('/', function(req, res) {
  * Sets appropriate static directories to support demo before rendering.
  * This may not be extensible. Remains to be seen. For now, works for the single demo.
  */
-app.get('/dynamic-bind-html', function (req, res) {
-  app.use(express.static('submodules/dynamic-bind-html'));
-  app.use(express.static('submodules/dynamic-bind-html/demo'));
+router.get('/dynamic-bind-html', function (req, res) {
+  router.use(express.static('submodules/dynamic-bind-html'));
+  router.use(express.static('submodules/dynamic-bind-html/demo'));
   res.render('dynamic-bind-html/demo/src/demo.html');
 });
 
-module.exports = app;
+module.exports = router;
