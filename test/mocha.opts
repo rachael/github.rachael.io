@@ -1,0 +1,5 @@
+--require should
+--reporter mocha-circleci-reporter
+--ui bdd
+--colors
+--check-leaks

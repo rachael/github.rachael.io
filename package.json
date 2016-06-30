@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Github demos and such. - Rachael Passov <github@rachael.io>",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./node_modules/rachael-io-common/bin/www"
+    "start": "node ./node_modules/rachael-io-common/bin/www",
+    "debug": "DEBUG=express:* npm start",
+    "test": "mocha test",
+    "test-debug": "DEBUG=express:* npm test"
   },
   "repository": {
     "type": "git",
@@ -21,10 +23,17 @@
     "compression": "^1.6.2",
     "consolidate": "^0.14.1",
     "cookie-parser": "^1.4.3",
+    "debug": "^2.2.0",
     "ejs": "^2.4.2",
     "express": "^4.14.0",
     "morgan": "^1.7.0",
     "pug": "^2.0.0-beta3",
     "rachael-io-common": "^1.0.3"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.3",
+    "mocha-circleci-reporter": "0.0.1",
+    "should": "^9.0.2",
+    "supertest": "^1.2.0"
   }
 }
