@@ -1,4 +1,0 @@
-#!/bin/bash
-
-git remote add origin git@github.com:rachael/github.rachael.io.git
-git push origin master
