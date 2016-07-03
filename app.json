@@ -1,1 +1,18 @@
-{}
+{
+  "name": "github.rachael.io",
+  "version": "1.0.0",
+  "description": "Github demos and such. - Rachael Passov <github@rachael.io>",
+  "keywords": [
+    "nodejs",
+    "express",
+    "dokku",
+    "github"
+  ],
+  "scripts": {
+    "dokku": {
+      "predeploy": "/app/node_modules/.bin/npm update"
+    }
+  },
+  "repository": "https://github.com/rachael/github.rachael.io",
+  "license": "MIT"
+}

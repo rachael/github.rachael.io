@@ -2,6 +2,12 @@
   "name": "github.rachael.io",
   "version": "1.0.0",
   "description": "Github demos and such. - Rachael Passov <github@rachael.io>",
+  "keywords": [
+    "nodejs",
+    "express",
+    "dokku",
+    "github"
+  ],
   "scripts": {
     "start": "node ./node_modules/rachael-io-common/bin/www",
     "debug": "DEBUG=express:* npm start",
@@ -27,8 +33,9 @@
     "ejs": "^2.4.2",
     "express": "^4.14.0",
     "morgan": "^1.7.0",
+    "npm": "rachael/npm",
     "pug": "^2.0.0-beta3",
-    "rachael-io-common": "^1.0.3"
+    "rachael-io-common": "rachael/rachael-io-common"
   },
   "devDependencies": {
     "mocha": "^2.5.3",
