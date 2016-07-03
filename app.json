@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "dokku": {
-      "predeploy": "npm test"
+      "predeploy": "/app/node_modules/.bin/npm update"
     }
   },
   "repository": "https://github.com/rachael/github.rachael.io",
